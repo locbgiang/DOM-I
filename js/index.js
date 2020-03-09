@@ -40,3 +40,40 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const aSelect = document.querySelectorAll('a');
+aSelect[0].textContent = siteContent.nav[`nav-item-1`];
+aSelect[1].textContent = siteContent.nav["nav-item-2"];
+aSelect[2].textContent = siteContent.nav["nav-item-3"];
+aSelect[3].textContent = siteContent.nav["nav-item-4"];
+aSelect[4].textContent = siteContent.nav["nav-item-5"];
+aSelect[5].textContent = siteContent.nav["nav-item-6"];
+
+
+let title = document.querySelector('h1');
+title.innerHTML = siteContent.cta.h1;
+
+let btn = document.querySelector('button');
+btn.textContent = siteContent.cta.button;
+
+let headImg = document.getElementById("cta-img");
+headImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let textTittle = document.querySelectorAll('h4');
+textTittle[0].textContent = siteContent["main-content"]["about-h4"];
+textTittle[1].textContent = siteContent["main-content"]['features-h4'];
+textTittle[2].textContent = siteContent["main-content"]['services-h4'];
+textTittle[3].textContent = siteContent["main-content"]['product-h4'];
+textTittle[4].textContent = siteContent["main-content"]['vision-h4'];
+textTittle[5].textContent = siteContent.contact["contact-h4"];
+
+let textPara = document.querySelectorAll('p');
+textPara[0].textContent = siteContent["main-content"]["features-content"];
+textPara[1].textContent = siteContent["main-content"]["about-content"];
+textPara[2].textContent = siteContent["main-content"]["services-content"];
+textPara[3].textContent = siteContent["main-content"]["product-content"];
+textPara[4].textContent = siteContent["main-content"]["vision-content"];
+textPara[5].innerHTML = `${siteContent.contact.address}</br>${siteContent.contact.phone}</br>${siteContent.contact.email}`;
+
+let midPic = document.getElementById("middle-img");
+midPic.setAttribute('src',siteContent["main-content"]['middle-img-src']);
