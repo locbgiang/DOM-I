@@ -48,6 +48,22 @@ aSelect[2].textContent = siteContent.nav["nav-item-3"];
 aSelect[3].textContent = siteContent.nav["nav-item-4"];
 aSelect[4].textContent = siteContent.nav["nav-item-5"];
 aSelect[5].textContent = siteContent.nav["nav-item-6"];
+for(let i=0;i<aSelect.length;i++){
+  aSelect[i].style.color='green';
+}
+
+let navigation = document.querySelector('nav');
+let aTag = document.createElement('a');
+aTag.setAttribute('href','#');
+aTag.textContent = 'Team';
+aTag.style.color='green';
+navigation.appendChild(aTag);
+
+let bTag = document.createElement('a');
+bTag.setAttribute('href','#');
+bTag.textContent = 'Mission';
+bTag.style.color='green';
+navigation.prepend(bTag);
 
 
 let title = document.querySelector('h1');
